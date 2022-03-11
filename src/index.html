@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Icylramadhan</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="shortcut icon" href="../../assets/img/favicon.png">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
+  <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.0/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
+  <!-- <link rel="stylesheet" href="css/style.css"> -->
+  <title>Islamic Center Of Yorba Linda</title>
+</head>
+<body>
+  <app-root></app-root>
+
+
+
+    
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vide/0.5.1/jquery.vide.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
+    <script src="https://unpkg.com/aos@2.3.0/dist/aos.js"></script>
+    <script>
+    AOS.init({
+    duration: 1200,
+    })
+    </script>
+    <!-- navbar action -->
+    <script type="text/javascript">
+    $(window).on('scroll', function (event) {
+    var scrollValue = $(window).scrollTop();
+    if (scrollValue > 120) {
+    $('.navbar').addClass('menu-sticky');
+    } else{
+    $('.navbar').removeClass('menu-sticky');
+    }
+    });
+    </script>
+    <script type="text/javascript">
+    var lFollowX = 0,
+    lFollowY = 0,
+    x = 0,
+    y = 0,
+    friction = 1 / 30;
+    function moveBackground() {
+    x += (lFollowX - x) * friction;
+    y += (lFollowY - y) * friction;
+    translate = "translate(" + x + "px, " + y + "px) scale(1.1)";
+    $(".motion").css({
+    "-webit-transform": translate,
+    "-moz-transform": translate,
+    transform: translate
+    });
+    window.requestAnimationFrame(moveBackground);
+    }
+    $(window).on("mousemove click", function (e) {
+    var lMouseX = Math.max(
+    -100,
+    Math.min(100, $(window).width() / 2 - e.clientX)
+    );
+    var lMouseY = Math.max(
+    -100,
+    Math.min(100, $(window).height() / 2 - e.clientY)
+    );
+    lFollowX = (20 * lMouseX) / 100; // 100 : 12 = lMouxeX : lFollow
+    lFollowY = (10 * lMouseY) / 100;
+    });
+    moveBackground();
+    </script>
+</body>
+</html>
+
+
